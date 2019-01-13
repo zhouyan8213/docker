@@ -1,8 +1,2 @@
-FROM index.tenxcloud.com/tenxcloud/nginx-php5
-MAINTAINER baiyu "baiyu@tenxcloud.com"
-
-ADD . /var/www/html
-# Expose the container port
-EXPOSE 3000
-
-CMD service php5-fpm start && nginx -g "daemon off;"
+FROM registry.aliyuncs.com/google_containers/kube-controller-manager:v1.13.0
+MAINTAINER mritd<mritd@dd.com>
